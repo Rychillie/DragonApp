@@ -5,8 +5,6 @@ import UIButton from 'components/UI/Button/Button';
 import styled from "styled-components";
 import Img from 'img/Dragon.jpg';
 
-import './Login.css';
-
 function initialState() {
   return { user:'', password:'' };
 }
@@ -102,19 +100,6 @@ const UserLoginFormControl = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-
-  label {
-    margin-bottom: 5px;
-    color: #979797;
-    font-size: 16px;
-  }
-
-  input {
-    border-radius: 4px;
-    border: 1px solid #BBBBBB;
-    height: 36px;
-    padding: 5px 10px;
-  }
 `
 
 const UserLogin = () => {
@@ -151,7 +136,7 @@ const UserLogin = () => {
           <UserLoginTitle>Acessar o Sistema</UserLoginTitle>
           <form onSubmit={onSubmit}>
             <UserLoginFormControl>
-              <label htmlFor="email">Usuário:</label>
+              <label className="login" htmlFor="email">Usuário:</label>
               <input
                 id="user"
                 type="text"
@@ -161,7 +146,7 @@ const UserLogin = () => {
               />
             </UserLoginFormControl>
             <UserLoginFormControl>
-              <label htmlFor="password">Senha:</label>
+              <label className="login" htmlFor="password">Senha:</label>
               <input
                 id="password"
                 type="password"
