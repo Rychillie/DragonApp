@@ -2,7 +2,7 @@ import React from 'react';
 import './Home.css';
 
 function logout() {
-  localStorage.clear();
+  localStorage.clear("token");
   window.location.href = '/login';
 }
 
