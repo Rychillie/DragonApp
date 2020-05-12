@@ -68,12 +68,12 @@ const UserTable = props => (
                 props.editRow(user)
               }}
             >
-              <img src={Edit} />
+              <img src={Edit} alt="edit" />
             </BtnItem>
             <BtnItem
               onClick={() => props.deleteUser(user.id)}
             >
-              <img src={Delete} />
+              <img src={Delete} alt="delete" />
             </BtnItem>
           </BtnList>
         </ItemLista>
