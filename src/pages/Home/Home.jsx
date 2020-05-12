@@ -3,7 +3,7 @@ import './Home.css';
 
 function logout() {
   localStorage.clear("token");
-  window.location.href = '/login';
+  window.location.href = '/';
 }
 
 const PagesHome = () => (
