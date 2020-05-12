@@ -151,7 +151,7 @@ const UserLogin = () => {
           <UserLoginTitle>Acessar o Sistema</UserLoginTitle>
           <form onSubmit={onSubmit}>
             <UserLoginFormControl>
-              <label htmlFor="email">E-mail</label>
+              <label htmlFor="email">Usuário:</label>
               <input
                 id="user"
                 type="text"
@@ -161,7 +161,7 @@ const UserLogin = () => {
               />
             </UserLoginFormControl>
             <UserLoginFormControl>
-              <label htmlFor="password">Senha</label>
+              <label htmlFor="password">Senha:</label>
               <input
                 id="password"
                 type="password"
